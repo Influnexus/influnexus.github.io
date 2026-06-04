@@ -1,0 +1,9 @@
+title: Influnexus Insights
+description: CGI, 3D, AI video, motion graphics & VFX production insights — India & Dubai.
+theme: minima
+url: "https://influnexus.github.io"
+author: Influnexus
+plugins:
+  - jekyll-seo-tag
+  - jekyll-sitemap
+header_pages: []
