@@ -81,3 +81,16 @@ If you're ready to transform your product presentation and stay competitive in D
 **Influnexus** is a CGI, 3D animation, AI video & VFX production studio serving brands across **India and Dubai**. From ad films to product visualization — [request a quote](https://www.influnexus.com/contact?utm_source=blog&utm_medium=organic&utm_campaign=product-visualization-ecommerce) or message us on [WhatsApp](https://wa.me/919956867605?text=Hi%2C%20I%20found%20you%20via%20influnexus.github.io%20%28product-visualization-ecommerce%29%20and%20want%20a%20quote).
 
 📞 [+919956867605](tel:+919956867605)  ·  🌐 [influnexus.com](https://www.influnexus.com?utm_source=blog&utm_medium=organic&utm_campaign=product-visualization-ecommerce)
+<script>
+document.addEventListener('click', function (e) {
+  var a = e.target.closest('a'); if (!a) return;
+  var href = a.getAttribute('href') || '';
+  var kind = href.indexOf('wa.me') !== -1 ? 'whatsapp'
+    : href.indexOf('tel:') === 0 ? 'phone_call'
+    : href.indexOf('/contact') !== -1 ? 'contact_form' : null;
+  if (!kind) return;
+  if (typeof gtag === 'function') {
+    gtag('event', 'generate_lead', { lead_type: kind, page_path: location.pathname });
+  }
+});
+</script>
