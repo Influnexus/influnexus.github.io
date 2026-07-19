@@ -1,0 +1,32 @@
+{% if site.ga4_id %}
+<!-- GA4 — set ga4_id in _config.yml to activate. Until then this block is inert. -->
+<script async src="https://www.googletagmanager.com/gtag/js?id={{ site.ga4_id }}"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', '{{ site.ga4_id }}');
+</script>
+{% endif %}
+<script>
+  // Revenue-signal click tracking: fires whether or not GA4 is wired yet
+  // (gtag is a no-op until the script above loads). Tags WA/tel/contact
+  // clicks as generate_lead events with source = this exact post's slug —
+  // this is the thing that tells us which posts produce leads, not traffic.
+  document.addEventListener('click', function (e) {
+    var a = e.target.closest('a');
+    if (!a) return;
+    var href = a.getAttribute('href') || '';
+    var kind = href.indexOf('wa.me') !== -1 ? 'whatsapp'
+             : href.indexOf('tel:') === 0 ? 'phone_call'
+             : href.indexOf('/contact') !== -1 ? 'contact_form'
+             : null;
+    if (!kind && href.indexOf('influnexus.com') === -1) return;
+    if (typeof gtag === 'function') {
+      gtag('event', 'generate_lead', {
+        lead_type: kind || 'site_click',
+        page_path: window.location.pathname
+      });
+    }
+  });
+</script>

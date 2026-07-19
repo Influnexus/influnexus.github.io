@@ -104,6 +104,6 @@ If you're ready to explore how world-class CGI can elevate your brand's storytel
 
 ## Get a CGI or Video Production Quote
 
-**Influnexus** is a CGI, 3D animation, AI video & VFX production studio serving brands across **India and Dubai**. From ad films to product visualization — [request a quote](https://www.influnexus.com/contact) or message us on [WhatsApp](https://wa.me/919956867605).
+**Influnexus** is a CGI, 3D animation, AI video & VFX production studio serving brands across **India and Dubai**. From ad films to product visualization — [request a quote](https://www.influnexus.com/contact?utm_source=blog&utm_medium=organic&utm_campaign=cgi-company-mumbai) or message us on [WhatsApp](https://wa.me/919956867605?text=Hi%2C%20I%20found%20you%20via%20influnexus.github.io%20%28cgi-company-mumbai%29%20and%20want%20a%20quote).
 
-📞 [+919956867605](tel:+919956867605)  ·  🌐 [influnexus.com](https://www.influnexus.com)
+📞 [+919956867605](tel:+919956867605)  ·  🌐 [influnexus.com](https://www.influnexus.com?utm_source=blog&utm_medium=organic&utm_campaign=cgi-company-mumbai)
